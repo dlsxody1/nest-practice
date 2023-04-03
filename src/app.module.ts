@@ -1,10 +1,10 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { Get, Module } from '@nestjs/common';
+import { MoviesController } from './movies/movies.controller';
 
+//데코레이터 클래스위의 함수.
 @Module({
   imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [MoviesController],
+  providers: [],
 })
 export class AppModule {}
